@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev:nohdolweb": "cd nohdolweb && next dev --turbopack",
+    "build:nohdolweb": "cd nohdolweb && next build",
+    "start:nohdolweb": "cd nohdolweb && next start",
     "lint": "next lint"
   },
+  "workspaces": [
+    "nohdolweb"
+  ],
   "dependencies": {
     "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.55.0",
