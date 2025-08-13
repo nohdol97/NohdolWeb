@@ -6,7 +6,10 @@
     "dev:nohdolweb": "cd nohdolweb && next dev --turbopack",
     "build:nohdolweb": "cd nohdolweb && next build",
     "start:nohdolweb": "cd nohdolweb && next start",
-    "lint": "next lint"
+    "deploy:nohdolweb": "vercel --cwd nohdolweb",
+    "deploy:nohdolweb:prod": "vercel --cwd nohdolweb --prod",
+    "lint": "next lint",
+    "preview": "vercel pull && vercel dev"
   },
   "workspaces": [
     "nohdolweb"
